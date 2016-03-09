@@ -40,20 +40,20 @@ PRO_GIT_RELEASE="@PRO_GIT_RELEASE@"
 PRO_GIT_DATE="@PRO_GIT_DATE@"
 
 AC_MSG_CHECKING(for nDPI)
-NDPI_HOME=./nDPI
+NDPI_HOME=./iSeal
 if test -d "$NDPI_HOME" ; then :
    AC_MSG_RESULT(found in $NDPI_HOME)
 else
-   NDPI_HOME=../nDPI
+   NDPI_HOME=../iSeal
    if test -d "$NDPI_HOME"; then :
       AC_MSG_RESULT(found in $NDPI_HOME)
    else
-      NDPI_HOME=$HOME/nDPI
+      NDPI_HOME=$HOME/iSeal
       if test -d "$NDPI_HOME"; then :
         AC_MSG_RESULT(found in $NDPI_HOME)
       else
         AC_MSG_RESULT(not found)
-        echo "Please do cd ..; git clone https://github.com/ntop/nDPI.git; cd nDPI; ./autogen.sh; make; cd ../ntopng"
+        echo "Please do cd ..; git clone https://github.com/ifoxhz/iSeal.git; cd iSeal; ./autogen.sh; make; cd ../iFox"
         echo " and try again"
         exit
       fi
